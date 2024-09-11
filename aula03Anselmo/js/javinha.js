@@ -24,7 +24,8 @@ else{
 
 var nome = prompt("Dgt seu nome:")
     document.write(`Aluno: ${nome}`)
-function nota(){
+
+    function nota(){
     
     var n1 = parseFloat( document.getElementById("nota1").value);
     var n2 = parseFloat(document.getElementById("nota2").value);
