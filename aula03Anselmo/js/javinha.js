@@ -12,21 +12,20 @@ function entrar(){
 }
 
 function calcular() {
-var nu1 = document.getElementById("cx1").value;
-nu1= parseFloat(nu1)
-if(nu1%2==0){
-    alert("par")
-}
-else{
-    alert("ímpar")
-}
+    var nu1 = document.getElementById("cx1").value;
+    nu1= parseFloat(nu1)
+    if(nu1%2==0){
+        alert("par")
+    }
+    else{
+        alert("ímpar")
+    }
 }
 
-var nome = prompt("Dgt seu nome:")
-    document.write(`Aluno: ${nome}`)
-
-    function nota(){
+function nota(){
     
+    var nome = document.getElementById("nome").value;
+    var frequencia = document.getElementById("fre").value
     var n1 = parseFloat( document.getElementById("nota1").value);
     var n2 = parseFloat(document.getElementById("nota2").value);
     var n3 = parseFloat(document.getElementById("nota3").value);
@@ -34,10 +33,13 @@ var nome = prompt("Dgt seu nome:")
     var media = document.getElementById("res")
     let item = document.createElement(`option`)
     item.text = `${t}`
-    media.appendChild(item)
-    if (t >= 7){
-        window.alert("aprovado");
+    media.appendChild(item)    
+
+ if(t >= 7 && frequencia >= 75) {   
+        document.write( nome+", com a média "+ t +" e frequencia " + frequencia+ " você está Aprovado")
+    } else if (t < 7 && t >= 4) {
+        document.write(`${nome}, com a média ${t} e frequencia ${frequencia} você está de Recuperação`)
     } else {
-        window.alert("reprovado");
+        document.write(`${nome}, com a média ${t} e frequencia ${frequencia} você está Reprovado`)
     }
 }
