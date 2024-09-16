@@ -35,8 +35,8 @@ function nota(){
     item.text = `${t}`
     media.appendChild(item)    
 
- if(t >= 7 && frequencia >= 75) {   
-        document.write( nome+", com a média "+ t +" e frequencia " + frequencia+ " você está Aprovado")
+ if(t >= 7 && frequencia >= 75) {
+        document.write( nome+", com a média "+ t +" e frequencia"+ frequencia+ " você está Aprovado")
     } else if (t < 7 && t >= 4) {
         document.write(`${nome}, com a média ${t} e frequencia ${frequencia} você está de Recuperação`)
     } else {
