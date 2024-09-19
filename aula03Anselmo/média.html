@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt/br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Média</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/javinha.js"></script>
     <style>
         img{
             height: 100px;
@@ -15,19 +16,20 @@
 <body>
     <header>
         <img src="img/carrossel.jpg" alt="">
-    </header>
-    <script src="js/javinha.js"></script>
-     
-    <div id="form">
+    </header>   
+
+        <div id="form">
+                Nome do aluno: <input type="text" name="nome" id="nome"> 
+                Frequência: <input type="text" id="fre">  <br>
+                <input type="number" id="nota1"/>
+                <input type="number" id="nota2"/>
+                <input type="number" id="nota3"/>
+                <select name="res" id="res"></select>
+            <br/> <button onclick="nota()">Média</button>
+        </div>
         
-            Nome do aluno: <input type="text" name="nome" id="nome"> 
-            Frequência: <input type="text" id="fre">  <br>
-            <input type="number" id="nota1"/>
-            <input type="number" id="nota2"/>
-            <input type="number" id="nota3"/>
-            <select name="res" id="res"></select>
-           <br/> <button onclick="nota()">Média</button>
-    </div>
-    <div id="situacao"></div>
-    <footer>Anselmo eu te amo</footer>
+        <div id="situacao">
+             
+        </div>
+    <footer style="color: aliceblue;">Anselmo eu te amo</footer>
 </html>

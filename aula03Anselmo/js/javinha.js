@@ -29,17 +29,18 @@ function nota(){
     var n1 = parseFloat( document.getElementById("nota1").value);
     var n2 = parseFloat(document.getElementById("nota2").value);
     var n3 = parseFloat(document.getElementById("nota3").value);
-    var t = (n1+n2+n3)/3
-    var media = document.getElementById("res")
-    let item = document.createElement(`option`)
-    item.text = `${t}`
-    media.appendChild(item)    
+    var t = (n1+n2+n3)/3;
+    var media = document.getElementById("res");
+    let item = document.createElement(`option`);
+    item.text = `${t}`;
+    media.appendChild(item);
+    var sit = document.getElementById("situacao")
 
  if(t >= 7 && frequencia >= 75) {
-        document.write( nome+", com a média "+ t +" e frequencia"+ frequencia+ " você está Aprovado")
+        sit.innerHTML =  `${nome}, com a média ${t} e frequência ${frequencia} você está Aprovado!`
     } else if (t < 7 && t >= 4) {
-        document.write(`${nome}, com a média ${t} e frequencia ${frequencia} você está de Recuperação`)
+        sit.innerHTML = `${nome}, com a média ${t} e frequência ${frequencia} você está de Recuperação!`
     } else {
-        document.write(`${nome}, com a média ${t} e frequencia ${frequencia} você está Reprovado`)
+        sit.innerHTML = `${nome}, com a média ${t} e frequência ${frequencia} você está Reprovado! *Frequência mínima 75*`
     }
 }

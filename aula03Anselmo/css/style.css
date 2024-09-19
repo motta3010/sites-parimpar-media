@@ -8,3 +8,9 @@ select#res{
     height: 20px;
     width: 5%;
 }
+div#situacao{
+ color: aliceblue;
+}
+div#form{
+    color: aliceblue;
+}
